@@ -20,9 +20,10 @@ public class YoutubeController {
     private YoutubeService youtubeService;
 
     @GetMapping("/search")
-    public ResponseEntity<ResponseObject> searchYoutube(@RequestParam(name = "q") String query) {
+    public ResponseEntity<ResponseObject> searchYoutube(@RequestParam(name = "q") String query,
+                                                        @RequestParam(name = "page", defaultValue = "1") int page) {
         return ResponseEntity.status(HttpStatus.OK).body(
-                youtubeService.searchVideoYoutube(query)
+                youtubeService.searchVideoYoutube(query, page)
         );
     }
 

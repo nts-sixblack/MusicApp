@@ -13,8 +13,8 @@ public class YoutubeService {
     @Autowired
     private RestTemplate restTemplate;
 
-    public ResponseObject searchVideoYoutube(String query) {
-        ResponseEntity<ResponseObject> responseEntity = restTemplate.getForEntity(Constant.YT_API_URL+"/search?page=1&q="+query, ResponseObject.class);
+    public ResponseObject searchVideoYoutube(String query, int page) {
+        ResponseEntity<ResponseObject> responseEntity = restTemplate.getForEntity(Constant.YT_API_URL+"/search?page="+page+"&q="+query, ResponseObject.class);
         return responseEntity.getBody();
     }
 
