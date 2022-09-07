@@ -11,6 +11,7 @@ public class FieldResponse {
     private String listeningFrequency;
     private String LikeFrequency;
     private String time;
+    private String name;
     private String Music_Url;
     private String Image_Url;
     private String Music_Size;

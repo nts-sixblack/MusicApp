@@ -44,6 +44,7 @@ public class MusicCategoryService {
                         fields.getLuot_nghe(),
                         fields.getLuot_thich(),
                         fields.getThoi_gian(),
+                        fields.getMusic_Title(),
                         fields.getMusic_Url(),
                         fields.getImage_Url(),
                         fields.getMusic_Size(),

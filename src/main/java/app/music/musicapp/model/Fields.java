@@ -11,6 +11,7 @@ public class Fields {
     private String luot_nghe;
     private String luot_thich;
     private String thoi_gian;
+    private String Music_Title;
     private String Music_Url;
     private String Image_Url;
     private String Music_Size;
